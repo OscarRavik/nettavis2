@@ -21,7 +21,7 @@ nav {
     grid-template-columns: 120px repeat(5, 1fr);
     width: 80vw;
     margin: auto;
-    height: 80px;
+    height: 60px;
 }
 
 nav img{
@@ -58,21 +58,9 @@ nav a:hover {
 }
 
 
-#artikler {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
-    padding: 30px;
-}
-@media (max-width: 1125px) {
-    #artikler{
-        grid-template-columns: repeat(7, 1fr);
-    }
-    nav {
-        width: 100vw;
-    }
 
-}
+
+
 main{
     margin-left: auto;
     margin-right: auto;
@@ -107,6 +95,37 @@ main a h1{
 .span10 {grid-column: span 10;}
 .span11 {grid-column: span 11;}
 .span12 {grid-column: span 12;}
+
+
+#artikler {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    padding: 30px;
+}
+@media (max-width: 1125px) {
+    #artikler {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    nav {
+        width: 100vw;
+    }
+
+    nav a, nav div {
+        font-size: 25px;
+        line-height: 60px;
+        height: 60px;
+    }
+
+    nav img {
+        width: 45%;
+    }
+    main {
+        width: 100vw;
+        margin-top: 0;
+    }
+}
 
 
 
